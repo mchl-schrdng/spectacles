@@ -32,9 +32,9 @@ class LookerClient:
         client_id: str,
         client_secret: str,
         port: int = 19999,
-        api_version: float = 3.1,
+        api_version: float = 4.0,
     ):
-        supported_api_versions = [3.1]
+        supported_api_versions = [4.0]
         if api_version not in supported_api_versions:
             raise SpectaclesException(
                 f"API version {api_version} is not supported. "
